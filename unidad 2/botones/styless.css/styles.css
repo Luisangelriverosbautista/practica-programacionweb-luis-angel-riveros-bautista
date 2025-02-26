@@ -1,0 +1,187 @@
+/* Estilo para el primer botón básico */
+.basic-button-p {
+    font-size: 16px; /* Tamaño de fuente */
+    background-color: #ddda12; /* Color de fondo amarillo */
+    color: white; /* Color del texto */
+    border: none; /* Sin bordes */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilo para otro botón básico con diferente color */
+.basic-button- {
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    background-color: #8dc98f; /* Color de fondo verde claro */
+    color: white; /* Color del texto */
+    border: none;
+    cursor: pointer;
+}
+
+/* Botón básico con bordes redondeados */
+.basic-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 15px; /* Bordes redondeados */
+    cursor: pointer;
+}
+
+/* Botón con icono */
+.icon-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #008CBA; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex; /* Alineación con el icono */
+    align-items: center;
+}
+
+/* Establece espacio entre el icono y el texto */
+.icon-button i {
+    margin-right: 10px;
+}
+
+/* Botón con animación al hacer clic */
+.animated-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f44336; /* Rojo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto de animación en el botón */
+.animated-button::after {
+    content: "";
+    background: #FFF;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+/* Cuando el botón se presiona, la animación se activa */
+.animated-button:active::after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+/* Botón elegante con icono */
+.fancy-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #673AB7; /* Morado */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Espaciado entre el icono y el texto */
+.fancy-button i {
+    margin-right: 10px;
+}
+
+/* Efecto de animación al presionar el botón */
+.fancy-button::after {
+    content: "";
+    background: #FFF;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.85s; /* Se agregó la unidad 's' */
+}
+
+/* Activación del efecto al hacer clic */
+.fancy-button:active::after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+/* Botón completamente redondo */
+.round-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #E91E63; /* Rosa */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Forma circular */
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+/* Botón semi redondo */
+.semi-round-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #03A9F4; /* Azul claro */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Bordes semi redondeados */
+    cursor: pointer;
+}
+
+/* Botón largo */
+.Long-button {
+    padding: 10px 50px;
+    font-size: 16px;
+    background-color: #FF9800; /* Naranja */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Botón corto */
+.short-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #685a0c; /* Marrón oscuro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Botón con extremos altamente redondeados */
+.extreme-round-button {
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #9C27B0; /* Morado oscuro */
+    color: white;
+    border: none;
+    border-radius: 50px; /* Bordes extremadamente redondeados */
+    cursor: pointer;
+}
+
+/* Espaciado entre los botones */
+button {
+    margin-bottom: 10px; /* Espacio entre botones en dirección vertical */
+    margin-right: 10px; /* Espacio entre botones en dirección horizontal */
+}
