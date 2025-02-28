@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\Sryles.css">
+    <title>estilo propio</title>
+</head>
+
+<body>
+
+    <section class="contenedor">
+
+        <form action="/submit" method="post">
+            <h1 class="titulo">Formulario de ejemplo</h1>
+            <label for="name"><center><img src="imagenes\usuario.png" alt="icono de nombre" width="30" height="30"></center>
+                <br>
+                Nombre:
+                
+                </label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email"><center><img src="imagenes\email.png" alt="icono de correo" width="30"
+                height="30"></center><br>
+                Correo electrónico: 
+                
+                </label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="city">Ciudad:</label>
+            <select id="city" name="city">
+                <option value="poo">P00</option>
+                <option value="ai">IA</option>
+            </select><br><br>
+            <button type="submit"> Enviar 
+                <br>
+                <img src="imagenes\enviar-mensaje.png" alt="icono de enviar-mensaje"  width="25" height="25"></button>
+        </form>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+* {
+  font-family: cursive;
+}
+
+body {
+  background-image: url('/imagenes/fondo.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.contenedor {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  margin: 5px;
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  width: 40%;
+  height: 80%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0)0px, 0px, 50px;
+}
+
+input {
+  border: none;
+  resize: none;
+  outline: none;
+  padding: 10px 0px;
+  width: 50%;
+  margin: 20px;
+  transition: all 300ms;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  transition:  background-color 0.3;
+ 
+}
+input:hover{
+  background-color: rgba(255, 9, 230, 0.313);
+}
+input:-webkit-autofill {
+  background-color: rgba(255, 9, 230, 0.313);
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255, 9, 230, 0.313) inset !important; /* Mantiene el fondo rosa */
+  color: black 
+}
+input:focus,
+textarea:focus {
+  border-bottom-color: #b700ff;
+
+}
+
+select {
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+select:hover {
+  background-color: rgb(139, 191, 236);
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 15px;
+  width: 80px;
+  background-color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgb(139, 191, 236);
+}
