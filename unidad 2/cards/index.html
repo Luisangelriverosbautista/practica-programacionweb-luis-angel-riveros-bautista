@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Row</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center">Uso del row</h1>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div style="background-color: rgb(255, 0, 0); color: #ffff;" class="card-header">
+                        <h6 class="text-center">PRIMER CARD</h6>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium a enim voluptas
+                            quibusdam, est distinctio autem beatae eius nemo adipisci reprehenderit iste, pariatur unde
+                            omnis voluptates. Animi iusto ab repudiandae?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div style="background-color: rgb(53, 53, 255); color: #ffffff;" class="card-header">
+                        <h6 class="text-center">SEGUNDO CARD</h6>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-style: italic;">
+                           7 palabras... ESENCIA!!!</p>
+                        <img src="https://i.pinimg.com/736x/f8/00/ea/f800eab5d2acb86f0deb314358f72e9a.jpg"
+                            alt="Imagen Segundo Card" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header text-center" style="background-color: purple; color: white;">
+                                <h5 class="mb-0">Botones con CSS</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="button-container">
+                                    <button class="btn btn-primary">Botón 1</button>
+                                    <button class="btn btn-secondary">Botón 2</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header text-center"
+                                style="background-color: rgb(5, 129, 12); color: white;">
+                                <h5 class="mb-0">Botones con Bootstrap</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-success">Botón 3</button>
+                                    <button class="btn btn-danger">Botón 4</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header text-center"
+                                style="background-color: rgb(255, 115, 0); color: white;">
+                                <h5 class="mb-0">Imágen</h5>
+                            </div>
+                            <div class="card-body d-flex justify-content-center">
+                                <img src="https://www.anmosugoi.com/wp-content/uploads/2024/10/1000210297-1.webp"
+                                    alt="Imagen de GOKU" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .button-container {
+                    display: flex;
+                    gap: 10px;
+                    /* Espacio entre botones */
+                }
+
+                .button-container button {
+                    flex: 1;
+                }
+            </style>
+
+
+            <!-- Cierra correctamente la primera fila -->
+
+            <div class="row mt-4">
+
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-header text-center" style="background-color: rgb(0, 162, 255); color: white;">
+                            <h5 class="mb-0">Botón con ícono</h5>
+                        </div>
+                        <div class="card-body d-flex justify-content-center">
+                            <button class="btn btn-primary d-flex align-items-center gap-2">
+                                <i class="bi bi-hand-thumbs-up"></i> Me Gusta
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+
+                    <div class="card">
+                        <div class="card-header text-center" style="background-color: orange; color: white;">
+                            <h5 class="mb-0">Botón con ícono</h5>
+                        </div>
+                        <div class="card-body d-flex justify-content-center">
+                            <button class="btn btn-warning d-flex align-items-center gap-2">
+                                <i class="bi bi-star-fill"></i> Botón Estrella
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header text-center" style="background-color: rgb(0, 0, 0); color: white;">
+                            <h5 class="mb-0">Tercer Card</h5>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="text-muted" style="font-size: 0.9rem;">
+                                NO lo entenderias demaciada ESENCIA XD.
+                                QUE SE VUELVA CANON!! XD
+                            </p>
+                            <img src="https://www.anmosugoi.com/wp-content/uploads/2024/10/Dragon-Ball-meme-ESENCIA.webp"
+                                alt="GOKU" class="img-fluid rounded">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
